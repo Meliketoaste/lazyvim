@@ -10,7 +10,7 @@ return {
 
   keys = {
     {
-      '<leader>n',
+      '<leader>N',
       function()
         require('neogit').open()
       end,

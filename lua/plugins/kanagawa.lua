@@ -27,18 +27,18 @@ return {
           return {
 
             -- Assign a static color to strings
-            String = { fg = colors.palette.carpYellow, italic = true },
-            -- theme colors will update dynamically when you change theme!
-            SomePluginHl = { fg = colors.theme.syn.type, bold = true },
+            --String = { fg = colors.palette.carpYellow, italic = true },
+            ---- theme colors will update dynamically when you change theme!
+            --SomePluginHl = { fg = colors.theme.syn.type, bold = true },
 
             ['@markup.heading.1.markdown'] = { fg = colors.palette.dragonPink },
             ['@markup.heading.2.markdown'] = { fg = colors.palette.lightBlue },
             ['@markup.heading.3.markdown'] = { fg = colors.palette.springGreen },
             ['@markup.heading.4.markdown'] = { fg = colors.palette.dragonOrange2 },
-            Pmenu = { fg = theme.ui.shade0, bg = theme.ui.bg_p1, blend = vim.o.pumblend },
-            PmenuSel = { fg = 'NONE', bg = theme.ui.bg_p2 },
-            PmenuSbar = { bg = theme.ui.bg_m1 },
-            PmenuThumb = { bg = theme.ui.bg_p2 },
+            --Pmenu = { fg = theme.ui.shade0, bg = theme.ui.bg_p1, blend = vim.o.pumblend },
+            --PmenuSel = { fg = 'NONE', bg = theme.ui.bg_p2 },
+            --PmenuSbar = { bg = theme.ui.bg_m1 },
+            --PmenuThumb = { bg = theme.ui.bg_p2 },
           }
         end,
       }
