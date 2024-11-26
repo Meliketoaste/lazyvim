@@ -39,6 +39,8 @@ return {
           mason = false,
 
         },
+
+
         --rust_analyzer = {
         --  mason = false,
         --},
@@ -56,6 +58,11 @@ return {
         },
       },
     },
+
+    require("lspconfig")["gdscript"].setup({
+      name = "godot",
+      cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),
+    })
   },
 
   {
@@ -119,5 +126,27 @@ return {
         dap = {},
       }
     end,
-  }
+  },
+
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        gdscript = { "gdformat" },
+      },
+    },
+  },
+
+  {
+    "mfussenegger/nvim-lint",
+
+    keys = {
+      { "<Space>ut", "<Cmd>LintToggle<CR>", desc = "Toggel Lint" },
+    },
+    opts = {
+      linters_by_ft = {
+        gdscript = { "gdlint" },
+      },
+    },
+  },
 }
